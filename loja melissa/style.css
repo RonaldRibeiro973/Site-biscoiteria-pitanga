@@ -1,0 +1,331 @@
+/* Estilo geral */
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding:0;
+  font-family: 'Georgia', serif;
+  background-color: #FFEDD4;
+  color: #5a3216;
+}
+
+/* Cabeçalho */
+.header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background-color: #FBC7D5;
+}
+
+.header .text {
+  max-width: 50%;
+}
+
+.header h1 {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+/* Faz o texto fica responsivo  junto com a imagem*/
+@media (max-width: 400px) {
+  .header h1 {
+  display: flex;
+  font-size: 35px;
+  text-align: center;
+}
+/* Faz o paragrafo fica responsivo  junto com a imagem*/
+@media (max-width: 400px) {
+  .header p {
+    display: flex;
+  font-size: 10px;
+  text-align: center;
+  margin-left: 35px;
+  }
+}
+}
+
+.header p {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.header button, a {
+  background-color: #D75C86;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width:400px) {
+ .header button {
+    display: flex;
+    margin-left: 15px;
+  }
+}
+
+/* Imagem dos biscoitos */
+.header .image img {
+   display: inline-block;
+  max-width: 400px;
+  border-radius: 16px;
+  margin-left: 10px;
+}
+
+@media (max-width: 700px) {
+  .header .image img {
+   display: inline-block;
+  max-width: 200px;
+  border-radius: 16px;
+}
+}
+
+@media (max-width: 549px) {
+  .header .image img {
+  display: none;
+  width:1px;
+  height: 1px;
+}
+}
+
+
+/* Seção de ícones */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 60px;
+  background-color: #fcebd4;
+  text-align: center;
+}
+
+/* ajustar icones sobre a loja*/
+@media (max-width:458px ) {
+  .features {
+  display: initial;
+  margin: 30px;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+}
+
+.features div {
+  max-width: 400px;
+}
+
+.features h4 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.features p {
+  font-size: 14px;
+  color: #7b5e42;
+}
+
+/* Cardápio */
+.menu {
+  padding: 40px 60px;
+  text-align: center;
+}
+
+
+.menu h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+
+/* fazer com que os produtos fiquem alinhados*/
+@media  (max-width:720px){
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;; 
+}
+}
+
+.menu-item {
+  background-color: #D75C86;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding:20px;
+  width: 200px;
+  height:440px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+@media (max-width:720px) {
+  .menu-item {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 150px;
+  height: 320px;
+  margin-bottom: 25px;
+}
+}
+
+@media (max-width:320px) {
+  .menu-item {
+  margin-left: 5%
+}
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+@media (max-width:720px) {
+  .menu-item img {
+  width: 80%;
+}
+}
+
+.menu-item h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.menu-item p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.menu-item button {
+  background-color: #8b4c1b;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (max-height: 766px) {
+  .menu-item button {
+    width: 125px;
+  }
+}
+
+/* ao atingir o minimo de pixel vai fazer o botão do meu fica responsivel*/
+@media  (min-height: 766px) {
+  .menu-item a {
+  display: inline-block;
+}
+}
+
+/* Depoimento */
+.feedback {
+  padding: 40px 60px;
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  color: #5a3216;
+}
+
+.feedback span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.footer {
+  background-color: #FBC7D5;
+  color: #8b4c1b;
+  padding: 40px 20px;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.footer-center {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.footer-center h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.social-icons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-icons a img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+.footer-links h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #fcebd4;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+span {
+  color:#D75C86;
+}
